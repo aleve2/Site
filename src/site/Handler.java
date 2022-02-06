@@ -6,6 +6,7 @@ import site.input.MouseManager;
 public class Handler {
 
     public static boolean isHome = false;
+    public static boolean isPong = false;
 
     private SitePanel sitePanel;
 

@@ -60,6 +60,18 @@ public class MouseInput implements MouseListener {
                 }
             }
         }
+
+        if(Handler.isPong) {
+            if (mx >= 8 && mx <= 58) {
+                if (my >= 8 && my <= 38) {
+                    // Pressed Back button
+                    System.out.println("test123");
+                    GamePanel.State = GamePanel.STATE.MENU;
+                }
+            }
+        }
+
+
     }
 
     @Override

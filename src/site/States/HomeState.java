@@ -58,8 +58,9 @@ public class HomeState extends State{
 
                 handler.getMouseManager().setUiManager(uiManager);
 
-                System.out.println("test12345");
+                System.out.println("test123455");
                 Handler.isHome = false;
+                Handler.isPong = true;
 
             }
         }));

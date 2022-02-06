@@ -1,5 +1,7 @@
 package site.PONG;
 
+import site.SpaceGame.MouseInput;
+
 import java.awt.*;
 import java.awt.event.*;
 import java.util.*;
@@ -26,6 +28,8 @@ public class GamePanel2 extends JPanel implements Runnable {
 
 
     GamePanel2(){
+        addMouseListener(new MouseInput2());
+
         newPaddles();
         newBall();
         score = new Score2(GAME_WIDTH,GAME_HEIGHT);
