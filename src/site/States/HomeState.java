@@ -1,6 +1,7 @@
 package site.States;
 
 import site.Handler;
+import site.PONG.GameFrame2;
 import site.SitePanel;
 import site.SpaceGame.GameFrame;
 import site.ui.ClickListener;
@@ -20,7 +21,7 @@ public class HomeState extends State{
         super(handler);
         uiManager = new UIManager(handler);
 
-
+        // Back button
         uiManager.addObject(new UIImageButton(10, 10, 200, 60, SitePanel.back, new ClickListener() {
             @Override
             public void onClick() {
@@ -31,6 +32,7 @@ public class HomeState extends State{
             }
         }));
 
+        // Space Game Button
         uiManager.addObject(new UIImageButton(563, 400, 165, 212, SitePanel.spaceInvadersHome, new ClickListener() {
             @Override
             public void onClick() {
@@ -45,6 +47,23 @@ public class HomeState extends State{
 
             }
         }));
+
+        // Pong Button
+        uiManager.addObject(new UIImageButton(503, 700, 200, 90, SitePanel.pongHome, new ClickListener() {
+            @Override
+            public void onClick() {
+                handler.getMouseManager().setUiManager(null);
+
+                GameFrame2 frame2 = new GameFrame2();
+
+                handler.getMouseManager().setUiManager(uiManager);
+
+                System.out.println("test12345");
+                Handler.isHome = false;
+
+            }
+        }));
+
 
     }
 

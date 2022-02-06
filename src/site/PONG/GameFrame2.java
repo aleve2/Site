@@ -7,7 +7,7 @@ public class GameFrame2 extends JFrame{
 
     GamePanel2 panel ;
 
-    GameFrame2(){
+    public GameFrame2(){
         panel = new GamePanel2();
         this.add(panel);
         this.setTitle("Pong Game");

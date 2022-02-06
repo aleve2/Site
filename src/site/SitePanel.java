@@ -43,6 +43,7 @@ public class SitePanel implements Runnable {
     public static BufferedImage[] back;
 
     public static BufferedImage[] spaceInvadersHome;
+    public static BufferedImage[] pongHome;
 
     static int timeCheck = 0;
     public static boolean alreadyExecuted = false;
@@ -75,6 +76,10 @@ public class SitePanel implements Runnable {
         spaceInvadersHome = new BufferedImage[2];
         spaceInvadersHome[0] = ImageLoader.loadImage("/textures/SpaceHome1.PNG");
         spaceInvadersHome[1] = ImageLoader.loadImage("/textures/SpaceHome2.PNG");
+
+        pongHome = new BufferedImage[2];
+        pongHome[0] = ImageLoader.loadImage("/textures/PongImage1.PNG");
+        pongHome[1] = ImageLoader.loadImage("/textures/PongImage2.png");
 
         //Start
         start = new BufferedImage[2];
