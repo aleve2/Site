@@ -16,8 +16,8 @@ public class MenuState extends State {
         super(handler);
         uiManager = new UIManager(handler);
 
-
-        uiManager.addObject(new UIImageButton(handler.getWidth() /2 - 100, 250, 200, 80, SitePanel.start, new ClickListener() {
+        // Old y: 250
+        uiManager.addObject(new UIImageButton(handler.getWidth() /2 - 100, 300, 200, 80, SitePanel.start, new ClickListener() {
             @Override
             public void onClick() {
                 handler.getMouseManager().setUiManager(null);
@@ -42,10 +42,19 @@ public class MenuState extends State {
     public void render(Graphics g) {
 
         // Title
+        g.setColor(Color.ORANGE);
+        g.fillRect((SitePanel.SCREEN_WIDTH / 2) + 10, 60, 610, 130);
+
         Font fnt0 = new Font("arial", Font.BOLD, 80);
         g.setFont(fnt0);
         g.setColor(Color.black);
-        g.drawString("Aaron's Apps", (SitePanel.SCREEN_WIDTH / 2) + 50, 150);
+        g.drawString("Aaron's Apps", (SitePanel.SCREEN_WIDTH / 2) + 60, 150);
+
+        Font fnt3 = new Font("arial", Font.BOLD, 20);
+        g.setFont(fnt3);
+        g.setColor(Color.black);
+        g.drawString("Welcome to my Site. This is where I put all my old and new projects." +
+                " Press Start to begin!", (SitePanel.SCREEN_WIDTH / 2) - 100, 250);
 
         uiManager.render(g);
     }

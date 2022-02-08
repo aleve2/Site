@@ -1,6 +1,7 @@
 package site.SpaceGame;
 
 import site.Handler;
+import site.SitePanel;
 import site.States.State;
 
 import javax.swing.*;
@@ -72,11 +73,34 @@ public class MouseInput implements MouseListener {
         }
 
 
+
     }
 
     @Override
     public void mouseEntered(MouseEvent e) {
+        /*
 
+        int mx = e.getX();
+        int my = e.getY();
+
+        Graphics g = null;
+
+// 263, 400, w = 165, h = 212
+
+        if(State.getState().equals(SitePanel.homeState)) {
+            if(mx >= 263 && mx <= 428) {
+                if(my >= 400 && my <= 612) {
+
+                    System.out.println("test");
+
+                    assert g != null;
+                    g.setColor(Color.red);
+                    g.drawRect(1,1,10,10);
+                }
+            }
+        }
+
+         */
     }
 
     @Override

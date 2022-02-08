@@ -38,7 +38,7 @@ public class HomeState extends State{
         }));
 
         // Pong Button
-        uiManager.addObject(new UIImageButton(243, 650, 200, 90, SitePanel.pongHome, new ClickListener() {
+        uiManager.addObject(new UIImageButton(243, 650, 200, 110, SitePanel.pongHome, new ClickListener() {
             @Override
             public void onClick() {
                 GameFrame2 frame2 = new GameFrame2();
@@ -65,10 +65,13 @@ public class HomeState extends State{
         uiManager.render(g);
 
         // Title
+        g.setColor(Color.ORANGE);
+        g.fillRect((SitePanel.SCREEN_WIDTH / 2) + 10, 60, 610, 130);
+
         Font fnt0 = new Font("arial", Font.BOLD, 80);
         g.setFont(fnt0);
         g.setColor(Color.black);
-        g.drawString("Aaron's Apps", (SitePanel.SCREEN_WIDTH / 2) + 50, 150);
+        g.drawString("Aaron's Apps", (SitePanel.SCREEN_WIDTH / 2) + 60, 150);
 
         // Games Title
         g.setColor(Color.darkGray);
