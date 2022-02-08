@@ -12,9 +12,6 @@ import java.awt.*;
 
 public class HomeState extends State{
 
-    public Rectangle gamesRect = new Rectangle(580, 350, 100, 100);
-
-
     private final UIManager uiManager;
 
     public HomeState(Handler handler) {
@@ -27,38 +24,24 @@ public class HomeState extends State{
             public void onClick() {
                 handler.getMouseManager().setUiManager(null);
                 State.setState(SitePanel.menuState);
-                System.out.println("test1234");
                 Handler.isHome = false;
             }
         }));
 
         // Space Game Button
-        uiManager.addObject(new UIImageButton(563, 400, 165, 212, SitePanel.spaceInvadersHome, new ClickListener() {
+        uiManager.addObject(new UIImageButton(263, 400, 165, 212, SitePanel.spaceInvadersHome, new ClickListener() {
             @Override
             public void onClick() {
-                handler.getMouseManager().setUiManager(null);
-
                 GameFrame frame = new GameFrame();
-
-                handler.getMouseManager().setUiManager(uiManager);
-
-                System.out.println("test12345");
                 Handler.isHome = false;
-
             }
         }));
 
         // Pong Button
-        uiManager.addObject(new UIImageButton(503, 700, 200, 90, SitePanel.pongHome, new ClickListener() {
+        uiManager.addObject(new UIImageButton(243, 650, 200, 90, SitePanel.pongHome, new ClickListener() {
             @Override
             public void onClick() {
-                handler.getMouseManager().setUiManager(null);
-
                 GameFrame2 frame2 = new GameFrame2();
-
-                handler.getMouseManager().setUiManager(uiManager);
-
-                System.out.println("test123455");
                 Handler.isHome = false;
                 Handler.isPong = true;
 
@@ -74,7 +57,6 @@ public class HomeState extends State{
 
         if(Handler.isHome) {
             handler.getMouseManager().setUiManager(uiManager);
-
         }
     }
 
@@ -90,12 +72,12 @@ public class HomeState extends State{
 
         // Games Title
         g.setColor(Color.darkGray);
-        g.fillRect(550, 300, 190, 70);
+        g.fillRect(250, 300, 190, 70);
 
         Font fnt1 = new Font("arial", Font.BOLD, 40);
         g.setFont(fnt1);
         g.setColor(Color.ORANGE);
-        g.drawString("Games", 580, 350);
+        g.drawString("Games", 280, 350);
 
 
     }

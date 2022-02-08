@@ -83,8 +83,8 @@ public class SitePanel implements Runnable {
 
         //Start
         start = new BufferedImage[2];
-        start[0] = ImageLoader.loadImage("/textures/start1.png");
-        start[1] = ImageLoader.loadImage("/textures/start2real.png");
+        start[0] = ImageLoader.loadImage("/textures/StartButton1.png");
+        start[1] = ImageLoader.loadImage("/textures/StartButton2.png");
 
         //Back
         back = new BufferedImage[2];
