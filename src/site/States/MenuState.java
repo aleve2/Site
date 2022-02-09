@@ -50,11 +50,11 @@ public class MenuState extends State {
         g.setColor(Color.black);
         g.drawString("Aaron's Apps", (SitePanel.SCREEN_WIDTH / 2) + 60, 150);
 
-        Font fnt3 = new Font("arial", Font.BOLD, 20);
+        Font fnt3 = new Font("Ink Free", Font.BOLD, 30);
         g.setFont(fnt3);
         g.setColor(Color.black);
         g.drawString("Welcome to my Site. This is where I put all my old and new projects." +
-                " Press Start to begin!", (SitePanel.SCREEN_WIDTH / 2) - 100, 250);
+                " Press Start to begin!", (SitePanel.SCREEN_WIDTH / 2) - 270, 250);
 
         uiManager.render(g);
     }
