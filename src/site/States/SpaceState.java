@@ -1,11 +1,6 @@
 package site.States;
 
 import site.Handler;
-import site.SitePanel;
-import site.SpaceGame.GameFrame;
-import site.ui.ClickListener;
-import site.ui.UIImageButton;
-import site.ui.UIManager;
 
 import java.awt.*;
 

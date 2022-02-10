@@ -1,4 +1,4 @@
-package site.SpaceGame;
+package site.apps.SpaceGame;
 
 import java.awt.*;
 import java.util.Random;

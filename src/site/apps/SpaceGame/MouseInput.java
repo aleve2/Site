@@ -1,8 +1,6 @@
-package site.SpaceGame;
+package site.apps.SpaceGame;
 
 import site.Handler;
-import site.SitePanel;
-import site.States.State;
 
 import javax.swing.*;
 import java.awt.*;

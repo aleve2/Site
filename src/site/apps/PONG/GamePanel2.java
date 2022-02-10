@@ -1,6 +1,4 @@
-package site.PONG;
-
-import site.SpaceGame.MouseInput;
+package site.apps.PONG;
 
 import java.awt.*;
 import java.awt.event.*;

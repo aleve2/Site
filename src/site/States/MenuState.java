@@ -16,23 +16,22 @@ public class MenuState extends State {
         super(handler);
         uiManager = new UIManager(handler);
 
+        // Start Button
         // Old y: 250
         uiManager.addObject(new UIImageButton(handler.getWidth() /2 - 100, 300, 200, 80, SitePanel.start, new ClickListener() {
             @Override
             public void onClick() {
                 handler.getMouseManager().setUiManager(null);
                 State.setState(handler.getSite().homeState);
-                System.out.println("test123");
+                // System.out.println("test123");
                 Handler.isHome = true;
             }
         }));
     }
 
-
     @Override
     public void tick() {
         uiManager.tick();
-
         if(!Handler.isHome) {
             handler.getMouseManager().setUiManager(uiManager);
         }

@@ -1,12 +1,9 @@
-package site.PONG;
+package site.apps.PONG;
 
 
 import site.Handler;
-import site.SpaceGame.GamePanel;
-import site.States.State;
+import site.apps.SpaceGame.GamePanel;
 
-import javax.swing.*;
-import java.awt.*;
 import java.awt.event.MouseListener;
 import java.awt.event.*;
 

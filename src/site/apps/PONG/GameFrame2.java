@@ -1,4 +1,4 @@
-package site.PONG;
+package site.apps.PONG;
 
 import java.awt.*;
 import javax.swing.*;

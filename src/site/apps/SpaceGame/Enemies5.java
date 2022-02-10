@@ -1,16 +1,16 @@
-package site.SpaceGame;
+package site.apps.SpaceGame;
 
 import java.awt.*;
 import java.util.*;
 
-public class Enemies3 extends Rectangle {
+public class Enemies5 extends Rectangle {
 
     Random random;
     int xVelocity;
     int yVelocity;
     public static int initialSpeed = 7;
 
-    Enemies3(int x, int y, int width, int height) {
+    Enemies5(int x, int y, int width, int height) {
         super(x, y, width, height);
         random = new Random();
         int randomXDirection = random.nextInt(2);

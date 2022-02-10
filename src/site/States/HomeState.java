@@ -1,9 +1,11 @@
 package site.States;
 
 import site.Handler;
-import site.PONG.GameFrame2;
+import site.apps.MortgageCalc.GUI;
+import site.apps.MortgageCalc.MortgageFrame;
+import site.apps.PONG.GameFrame2;
 import site.SitePanel;
-import site.SpaceGame.GameFrame;
+import site.apps.SpaceGame.GameFrame;
 import site.ui.ClickListener;
 import site.ui.UIImageButton;
 import site.ui.UIManager;
@@ -38,16 +40,22 @@ public class HomeState extends State{
         }));
 
         // Pong Button
-        uiManager.addObject(new UIImageButton(243, 650, 200, 110, SitePanel.pongHome, new ClickListener() {
+        uiManager.addObject(new UIImageButton(246, 650, 200, 110, SitePanel.pongHome, new ClickListener() {
             @Override
             public void onClick() {
                 GameFrame2 frame2 = new GameFrame2();
                 Handler.isHome = false;
                 Handler.isPong = true;
-
             }
         }));
 
+        // Mortgage Button
+        uiManager.addObject(new UIImageButton(860, 400, 200, 120, SitePanel.mortgageHome, new ClickListener() {
+            @Override
+            public void onClick() {
+                MortgageFrame frame3 = new MortgageFrame();
+            }
+        }));
 
     }
 
@@ -82,7 +90,15 @@ public class HomeState extends State{
         g.setColor(Color.ORANGE);
         g.drawString("Games", 280, 350);
 
+        // Lines
 
+        //Line between Space and Pong
+        g.setColor(Color.darkGray);
+        g.drawLine(240,630,450,630);
+
+        //First Divider
+        g.setColor(Color.darkGray);
+        g.drawLine(1920 / 3, 200, 1920 / 3, 800);
     }
 }
 
